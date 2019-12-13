@@ -31,3 +31,18 @@ def deletar(request):
         item.save()
         return redirect('aluno/listar')
     return render(request, 'lista.html')
+
+def home(request):
+    return render(request,'home.html')
+
+def login(request):
+    data_usuario_aux = Usuario.objects,get(email = resquest.POST['email'])
+    usuario = authenticate(usuario=data_usuario_aux.username,senha = request.POST['senha'])
+
+    if usuario is not None:
+        login(request usurario)
+        return HttpResponseRedirect('/')
+    return HttpResponseRedirect('/')
+
+    return render(request,'login.html')
+

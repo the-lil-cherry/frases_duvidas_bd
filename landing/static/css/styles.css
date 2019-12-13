@@ -2,8 +2,27 @@ body{
     margin-left: 20px;
 }
 
+nav {
+    display : flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: blueviolet;
+    height: 80px;
+}
+
+nav a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+div{
+    display:flex; 
+    width: 50%;
+    text-align: justify;
+}
+
 .titulo-index{
-    color: blue;
+    color: indianred;
     font-size: 30pt;
 }
 
